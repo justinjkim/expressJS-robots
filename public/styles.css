@@ -1,3 +1,7 @@
+body {
+  font-family: Courier, sans-serif;
+}
+
 .flex_container {
   display: flex;
   flex-wrap: wrap;
@@ -6,8 +10,31 @@
 .robot_profile {
   border: 1px solid black;
   box-shadow: 3px 3px 3px #ddd;
-  height: 250px;
+  height: 300px;
   width: 200px;
   margin: 10px;
   padding: 10px;
+  text-align: center;
+  transition: 0.4s ease background-color;
+}
+
+.robot_profile:hover {
+  background-color: lightblue;
+}
+
+.robot_main {
+  margin: 0 auto;
+  display: block;
+  width: 500px;
+  height: auto;
+  text-align: center;
+}
+
+.skills {
+  text-align: left;
+}
+
+.available {
+  color: red;
+  text-transform: uppercase;
 }

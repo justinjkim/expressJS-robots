@@ -13,6 +13,7 @@ app.get('/', function(req, res) {
 })
 
 app.get('/:profile', function(req, res) {
+  console.log(req.params.profile);
   let profileID = req.params.profile - 1;
   res.render('profile', data.users[profileID]);
 })

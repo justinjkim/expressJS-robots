@@ -1,0 +1,13 @@
+.flex_container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.robot_profile {
+  border: 1px solid black;
+  box-shadow: 3px 3px 3px #ddd;
+  height: 250px;
+  width: 200px;
+  margin: 10px;
+  padding: 10px;
+}

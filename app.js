@@ -12,6 +12,11 @@ app.get('/', function(req, res) {
   res.render('index', data);
 })
 
+app.get('/:profile', function(req, res) {
+  let profileID = req.params.profile - 1;
+  res.render('profile', data.users[profileID]);
+})
+
 app.listen(3000, function(req, res) {
   console.log('Starting up LinkedIn for Robots...');
 })

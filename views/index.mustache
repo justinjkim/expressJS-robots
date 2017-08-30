@@ -1,7 +1,14 @@
 {{#users}}
-<ul>
-  <li>
-    {{name}}
-  </li>
-</ul>
+  <img src="{{avatar}}"  />
+  <h3><a href="{{id}}">{{name}}</a></h3>
+  <h4>{{job}}</h4>
+  <h4>{{^job}}Available for hire{{/job}}</h4>
+  <!-- <p>Skills</p>
+  <ul>
+    {{#skills}}
+    <li>
+      {{.}}
+    </li>
+    {{/skills}}
+  </ul> -->
 {{/users}}

@@ -1,20 +1,25 @@
-{{#users}}
-  <img src="{{avatar}}"  />
-  <h3><a href="{{id}}">{{name}}</a></h3>
+<!DOCTYPE html>
+<head>
+  <title>LinkedIn - Robots</title>
+  <link rel="stylesheet" type="text/css" href="/styles.css" />
+</head>
+<body>
+  <h1>LinkedIn for Robots!</h1>
+  <div class="flex_container">
+    {{#users}}
+      <div class="robot_profile">
+          <img src="{{avatar}}"  />
+          <h3><a href="{{id}}">{{name}}</a></h3>
+          {{#job}}<h4>{{job}} | {{company}}</h4>{{/job}}
+          {{^job}}<h4 class="available">Available for hire</h4>{{/job}}
 
 
+      </div>
+    {{/users}}
+  </div><!-- end of flex_container -->
 
 
-  {{#job}}<h4>{{job}} | {{company}}</h4>{{/job}}
-  {{^job}}<h4>Available for hire</h4>{{/job}}
+</body>
 
 
-  <!-- <p>Skills</p>
-  <ul>
-    {{#skills}}
-    <li>
-      {{.}}
-    </li>
-    {{/skills}}
-  </ul> -->
-{{/users}}
+</html>
